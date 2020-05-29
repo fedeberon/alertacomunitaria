@@ -1,0 +1,38 @@
+version: "3"
+services:
+    alertacomunitaria_web:
+        container_name: 40859/alertacomunitaria
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: 40859/alertacomunitaria
+        ports:
+            - "8887:8887"
+        networks:
+            - app-network
+        depends_on:
+            - alertacomunitaria_db
+
+    alertacomunitaria_db:
+        image: mysql:5.6
+        volumes:
+            - "./.mysql-data/db:/var/lib/mysql"
+        restart: always
+        ports:
+            - 3306:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: alertacomunitaria
+            MYSQL_USER: sa
+            MYSQL_PASSWORD: sa
+        networks:
+            - app-network
+
+#Docker Networks
+networks:
+    app-network:
+        driver: bridge
+#Volumes
+volumes:
+    dbdata:
+        driver: local

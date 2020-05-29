@@ -17,29 +17,4 @@ public class LoginController {
         return "login";
     }
 
-    @RequestMapping(value = {"/tables" , ""})
-    public String tables() {
-        return "tables";
-    }
-
-    @RequestMapping(value = {"/widget" , ""})
-    public String widget() {
-        return "widget";
-    }
-
-    @RequestMapping(value = {"/general-form" , ""})
-    public String generalForm() {
-        return "general-form";
-    }
-
-    @RequestMapping(value = {"/advanced-form" , ""})
-    public String advancedForm() {
-        return "advanced-form";
-    }
-
-    @RequestMapping(value = {"/editor-form" , ""})
-    public String editorForm() {
-        return "editor-form";
-    }
-
 }

@@ -43,6 +43,7 @@
 <script type="text/javascript" src='<c:url value="/assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"/>'></script>
 <script type="text/javascript" src='<c:url value="/assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"/>'></script>
 <script type="text/javascript" src='<c:url value="/assets/dist/js/adminlte.min.js"/>'></script>
+<script type="text/javascript" src='<c:url value="/assets/script.js"/>'></script>
 
 </body>
 </html>

@@ -65,7 +65,7 @@ public class DataBaseConfiguration {
             @Qualifier("dataSource") DataSource dataSource) {
         return builder
                 .dataSource(dataSource)
-                .packages("com.ideaas.services.*")
+                .packages("com.ideaas.*")
                 .persistenceUnit(this.nameDataBaseConection)
                 .properties(jpaProperties())
                 .build();
