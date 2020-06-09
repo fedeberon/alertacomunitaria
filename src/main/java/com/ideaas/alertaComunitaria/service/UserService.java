@@ -51,4 +51,9 @@ public class UserService implements IUserService {
 
         return usuarios.getContent();
     }
+
+    @Override
+    public User getById(Long id) {
+        return dao.findById(id).get();
+    }
 }

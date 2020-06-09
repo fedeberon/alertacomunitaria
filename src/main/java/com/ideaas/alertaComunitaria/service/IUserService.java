@@ -10,4 +10,7 @@ public interface IUserService extends UserDetailsService {
     User save(User user);
 
     List<User> findAll(Integer pageSize, Integer pageNo, String sortBy);
+
+    User getById(Long id);
+
 }

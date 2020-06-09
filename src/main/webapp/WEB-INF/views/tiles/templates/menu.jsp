@@ -7,6 +7,8 @@
     String username = ((UserDetails)principal).getUsername();
 %>
 <!-- Main Sidebar Container -->
+<body class="hold-transition sidebar-mini">
+
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="<c:url value='/home'/>" class="brand-link">
@@ -67,3 +69,4 @@
     </div>
     <!-- /.sidebar -->
 </aside>
+</body>

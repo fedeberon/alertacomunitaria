@@ -41,6 +41,7 @@
                             <table class="table table-head-fixed text-nowrap">
                                 <thead>
                                 <tr>
+                                    <th>ID</th>
                                     <th>Nombre completo</th>
                                     <th>Nombre de usuario</th>
                                     <th>Correo electr&oacute;nico</th>
@@ -50,6 +51,8 @@
                                 <tbody>
                                 <c:forEach items="${usuarios}" var="bo">
                                     <tr>
+                                        <td><a href="<c:url value='/usuario/show?id=${bo.id}'/>" class="btn btn-primary" title="Perfil de usuario">${bo.id}</a>
+                                        </td>
                                         <td>${bo.nombreCompleto}</td>
                                         <td>${bo.username}</td>
                                         <td>${bo.mail}</td>

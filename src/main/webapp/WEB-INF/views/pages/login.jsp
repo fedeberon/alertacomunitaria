@@ -6,9 +6,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 3 | Log in</title>
+    <title>Alerta comunitaria</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 
     <!-- Font Awesome -->
     <style>
@@ -24,18 +26,18 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="../../index2.html"><b>Admin</b>LTE</a>
+        <a href="../../index2.html"><b>Alerta Comunitaria</b></a>
     </div>
     <!-- /.login-logo -->
     <div class="card">
         <div class="card-body login-card-body">
-            <p class="login-box-msg">Sign in to start your session</p>
+            <p class="login-box-msg">Inicia sesión</p>
             <form class="form-signin" name='f' action="login" style="text-align: center" method='POST'>
                 <div class="input-group mb-3">
                     <input type="username" class="form-control" name="username" placeholder="Nombre de usuario">
                     <div class="input-group-append">
                         <div class="input-group-text">
-                            <span class="fas fa-envelope"></span>
+                            <i class="fas fa-user"> </i>
                         </div>
                     </div>
                 </div>
@@ -48,31 +50,30 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-8">
-                    </div>
                     <!-- /.col -->
-                    <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                    <div class="col-5">
+                        <button type="submit" class="btn btn-info text-right">Iniciar Sesión</button>
                     </div>
                     <!-- /.col -->
                 </div>
             </form>
-
+            <div class="row ml-1" >
             <div class="social-auth-links text-center mb-3">
                 <a href="#" class="btn btn-block btn-primary">
-                    <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+                    <i class="fab fa-facebook mr-2"></i>Iniciar sesión con Facebook
                 </a>
-                <a href="#" class="btn btn-block btn-danger">
-                    <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+                <a href="#" class="btn btn-block btn-danger mt-2">
+                    <i class="fab fa-google-plus mr-2"></i>Iniciar sesion con Google+
                 </a>
+            </div>
             </div>
             <!-- /.social-auth-links -->
 
-            <p class="mb-1">
-                <a href="forgot-password.html">I forgot my password</a>
+            <p class="mb-1 ml-1">
+                <a href="forgot-password.html">Olvide mi contraseña</a>
             </p>
-            <p class="mb-0">
-                <a href="register.html" class="text-center">Register a new membership</a>
+            <p class="mb-0 ml-1">
+                <a>¿No tienes una cuenta?</a> <a href="register.html" class="text-center">Regristrate</a>
             </p>
         </div>
         <!-- /.login-card-body -->
