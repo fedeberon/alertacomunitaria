@@ -8,11 +8,11 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ideaas</groupId>
-	<artifactId>alertaComunitaria</artifactId>
-	<packaging>war</packaging>
+	<groupId>com.ideaas.lared</groupId>
+	<artifactId>redsoft</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>alertaComunitaria</name>
+	<name>redsoft</name>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 
 	<dependencies>
@@ -131,8 +131,37 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.ideaas.web.ScopesiWebApplication</mainClass>
+					<fork>true</fork>
+					<skip>false</skip>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
+
+		<resources>
+			<resource>
+				<directory>${basedir}/src/main/webapp</directory>
+				<includes>
+					<include>**/**</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>${basedir}/src/main/resources</directory>
+				<includes>
+					<include>**/**</include>
+				</includes>
+			</resource>
+		</resources>
+
+
 	</build>
 
 </project>
